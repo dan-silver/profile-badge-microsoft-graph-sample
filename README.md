@@ -45,7 +45,7 @@ To use the Profile Badge Graph Sample, you need the following:
 
 1. Download or clone the Profile Badge Graph Sample.
 
-2. Using your favorite IDE, open **config.js** in */utils*.
+2. Using your favorite IDE, create **config.js** in */utils* from **config.example.js**.
 
 3. Replace the **clientId** and **clientSecret** placeholder values with the application ID and password that you copied during app registration.
 
