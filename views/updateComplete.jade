@@ -1,0 +1,26 @@
+
+//- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license.
+//- See LICENSE in the project root for license information.
+
+extends layout
+
+block content
+    .container
+        .row
+            .col-md-6
+                h1 We've updated your photo!
+                p It might take a little bit for Skype, Outlook and other apps to display your new photo.
+
+                img#updatedPhoto(src="/user/photo")
+            .col-md-6
+                .well
+                    h3 Invite your coworkers!
+                    ul
+                        each person in coworkers
+                            li
+                                strong
+                                    a(href="mailto:"+person.emailAddresses[0].address+"?subject="+email.subject+"&amp;body="+email.body)=person.displayName
+                .well
+                    h3 Need to change your photo back?
+                    p You can upload any photo and we'll update your company picture.
+                    a.btn.btn-outline.btn-xl(href='/user/uploadAnyPhoto') Change my picture

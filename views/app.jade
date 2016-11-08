@@ -1,0 +1,23 @@
+
+//- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license.
+//- See LICENSE in the project root for license information.
+
+extends layout
+
+block content
+    .container
+        #imgCompare.row
+            .col-md-6
+                div#badgeDesigner
+            .col-md-1
+            .col-md-5
+                .well
+                    p
+                        | Place the voting badge anywhere in your picture and click the update button. The designer supports resizing the badge by multitouch or scrolling! 
+                    p
+                        a#uploadPicture.btn.btn-outline.btn-xl(onclick="uploadPicture()") Update my picture
+        .row
+            .col-md-6
+                p
+block head
+    script(src='/js/app.js')

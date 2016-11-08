@@ -1,0 +1,68 @@
+
+//- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license.
+//- See LICENSE in the project root for license information.
+
+doctype html
+html
+  head
+    title Profile Badges
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+
+    script(src='/libs/bootstrap/js/bootstrap.min.js')
+    link(href='/libs/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+
+    //- // Custom Fonts
+    link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Muli', rel='stylesheet')
+    //- // Plugin CSS
+    link(rel='stylesheet', href='/libs/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/libs/simple-line-icons/css/simple-line-icons.css')
+
+    //- // Theme CSS
+    link(href='/css/new-age.css', rel='stylesheet')
+
+    script(src="https://cdn.rawgit.com/konvajs/konva/1.2.2/konva.min.js")
+    
+
+    link(rel='stylesheet', href='/css/main.css')
+
+    script(src='/bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.js')
+    link(rel='stylesheet', href='/bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css')
+
+    block head
+
+body
+  header
+    if user
+      nav.navbar.navbar-default
+          .container
+                  ul.nav.navbar-nav.navbar-right
+                          li
+                            a.page-scroll(href='/logout') Logout
+    .container
+      .row
+        div
+          block content
+  section#download.download.bg-primary.text-center
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          h2.section-heading Powered by the Microsoft Graph
+          p Built with the Microsoft Graph JavaScript SDK
+          .badges
+            a.badge-link(href='https://github.com/microsoftgraph/msgraph-sdk-javascript')
+              img(src='/img/GitHub-Mark-Light-120px-plus.png', alt='')
+         
+
+  footer
+    .container
+      p Some footer message
+      ul.list-inline
+        li
+          a(href='https://startbootstrap.com/template-overviews/new-age/') New Age Bootstrap Theme
+        li
+          a(href='mailto:dansil@microsoft.com') Contact me

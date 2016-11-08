@@ -1,0 +1,27 @@
+{
+  "name": "msgraph-nodejs-connect-sample",
+  "description": "A NodeJS connect sample utilizing the Graph JavaScript SDK",
+  "main": "app.js",
+  "authors": [
+    "Dan Silver"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "graph",
+    "microsoft",
+    "nodejs",
+    "unified"
+  ],
+  "homepage": "https://github.com/dan-silver/profile-badge",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "seiyria-bootstrap-slider": "^9.2.0"
+  }
+}

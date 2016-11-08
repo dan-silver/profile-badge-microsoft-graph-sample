@@ -1,0 +1,37 @@
+#demo {
+    position: relative;
+    margin-top: 280px;
+}
+
+#demo img {
+    position: absolute;
+}
+
+img#badge {
+    width: 130px;
+    left: 220px;
+    top: 267px;
+}
+
+img#person {
+    width: 388px;
+}
+
+
+#imgCompare img, #imgCompare canvas {
+  max-width: 90%;
+}
+
+/*/user/updateComplete*/
+img#updatedPhoto {
+    max-width: 350px;
+}
+
+.well, .well a {
+    color: rgb(37, 37, 37);
+}
+
+#uploadPicture {
+    margin: 35px;
+    font-size: 15px;
+}

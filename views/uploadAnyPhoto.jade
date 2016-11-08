@@ -1,0 +1,17 @@
+//- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license.
+//- See LICENSE in the project root for license information.
+
+extends layout
+
+block content
+    script(src="/js/uploadAnyPhoto.js")
+       
+    .container
+        .row
+            .col-md-6
+                h1 Change your photo
+                p Upload any photo and we'll update your Microsoft account photo.
+                p It might take a little bit for Skype, Outlook and other apps to display your new photo.
+
+                
+                input#photo(type="file", name="photo")

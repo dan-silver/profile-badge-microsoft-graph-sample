@@ -1,0 +1,22 @@
+
+//- Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license.
+//- See LICENSE in the project root for license information.
+
+extends layout
+
+block content
+  .col-sm-7
+    .header-content
+      .header-content-inner
+        h1 Let your coworkers know you're voting!
+        h2 Login to add a voting badge to your company profile picture
+        p
+        a.btn.btn-outline.btn-xl(href="/login") Login
+  .col-sm-5
+    .device-container
+      div
+        div
+          #demo
+            // Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else!
+            img#person(src='/img/avatar.png')
+            img#badge.img-responsive(src='/img/vote.png', alt='')
